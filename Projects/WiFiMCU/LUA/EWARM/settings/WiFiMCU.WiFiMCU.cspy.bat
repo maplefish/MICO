@@ -21,11 +21,11 @@
 
 @echo off 
 
-if not "%1" == "" goto debugFile 
+if not "%~1" == "" goto debugFile 
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\LoBo\WiFiMCU\MICO_v2.3_git\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.general.xcl" --backend -f "C:\LoBo\WiFiMCU\MICO_v2.3_git\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.driver.xcl" 
+"Z:\home\todd\IAR\common\bin\cspybat" -f "Z:\home\todd\src\MICO\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.general.xcl" --backend -f "Z:\home\todd\src\MICO\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\LoBo\WiFiMCU\MICO_v2.3_git\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.general.xcl" "--debug_file=%1" --backend -f "C:\LoBo\WiFiMCU\MICO_v2.3_git\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.driver.xcl" 
+"Z:\home\todd\IAR\common\bin\cspybat" -f "Z:\home\todd\src\MICO\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.general.xcl" "--debug_file=%~1" --backend -f "Z:\home\todd\src\MICO\Projects\WiFiMCU\LUA\EWARM\settings\WiFiMCU.WiFiMCU.driver.xcl" 
 
 @echo off 
 :end

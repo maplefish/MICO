@@ -123,7 +123,7 @@ static int docall (lua_State *L, int narg, int clear) {
 static void print_version (void) {
   l_message(NULL,"\r\n");
   char temp[128];
-  sprintf(temp,"[ %s WiFiMCU Team     ]\r\n[ %s modified by LoBo ]\r\n",PRT_VERSION,BUILD_DATE);
+  sprintf(temp,"[ %s WiFiMCU Team     ]\r\n[ %s modified by LoBo / maroc ]\r\n",PRT_VERSION,BUILD_DATE);
   l_message(NULL,temp);
 }
 

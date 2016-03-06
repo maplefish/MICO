@@ -2,9 +2,9 @@
 #ifndef __USER_CONFIG_H__
 #define __USER_CONFIG_H__
 
-#define MCU_VERSION "WiFiMCU 0.9.15 LoBo"
-#define PRT_VERSION "Ver.  0.9.15_LoBo"
-#define BUILD_DATE  "Build 20160213   "
+#define MCU_VERSION "WiFiMCU 0.9.15 LoBo/maroc"
+#define PRT_VERSION "Ver.  0.9.15_LoBo/maroc"
+#define BUILD_DATE  "Build 20160306   "
 
 #define USE_GPIO_MODULE
 #define USE_ADC_MODULE
@@ -19,10 +19,10 @@
 #define USE_UART_MODULE
 #define USE_BIT_MODULE
 #define USE_SENSOR_MODULE
-#define USE_OLED_MODULE
-#define USE_LCD_MODULE
+// #define USE_OLED_MODULE
+// #define USE_LCD_MODULE
 #define USE_RTC_MODULE
-#define USE_OLED_MODULE
+// #define USE_OLED_MODULE
 #define USE_MQTT_MODULE
 //#define USE_FTP_MODULE
 

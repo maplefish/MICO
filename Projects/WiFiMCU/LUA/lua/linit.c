@@ -137,6 +137,7 @@ static const luaL_Reg lualibs[] = {
   {NULL, NULL}
 };
 
+extern const luaR_entry co_funcs[];
 extern const luaR_entry strlib[];
 extern const luaR_entry math_map[];
 extern const luaR_entry tab_funcs[];
@@ -200,6 +201,7 @@ extern const luaR_entry ftp_map[];
 
 const luaR_table lua_rotable[] = 
 {
+  {LUA_COLIBNAME, co_funcs},
     {LUA_STRLIBNAME, strlib},
     {LUA_MATHLIBNAME, math_map},
     {LUA_TABLIBNAME, tab_funcs},

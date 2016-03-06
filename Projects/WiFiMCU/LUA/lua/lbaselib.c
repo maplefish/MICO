@@ -720,6 +720,9 @@ const LUA_REG_TYPE co_funcs[] = {
   {LSTRKEY("status"), LFUNCVAL(luaB_costatus)},
   {LSTRKEY("wrap"), LFUNCVAL(luaB_cowrap)},
   {LSTRKEY("yield"), LFUNCVAL(luaB_yield)},
+#if LUA_OPTIMIZE_MEMORY > 0
+  {LSTRKEY("__index"), LROVAL(co_funcs)},
+#endif
   {LNILKEY, LNILVAL}
 };
 
@@ -763,7 +766,7 @@ static void base_open (lua_State *L) {
 
 LUALIB_API int luaopen_base (lua_State *L) {
   base_open(L);
-#if LUA_OPTIMIZE_MEMORY == 0 && defined( MODULE_LUA_CO_LINE )
+#if LUA_OPTIMIZE_MEMORY == 0 && defined( MODULE_LUA_CO_LINE ) 
   luaL_register(L, LUA_COLIBNAME, co_funcs);
   return 2;
 #else

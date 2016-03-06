@@ -1,5 +1,3 @@
- -B 
-
 "--endian=little" 
 
 "--cpu=Cortex-M4" 
@@ -8,7 +6,7 @@
 
 "-p" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CONFIG\debugger\ST\STM32F411CE.ddf" 
+"Z:\home\todd\IAR\arm\CONFIG\debugger\ST\STM32F411CE.ddf" 
 
 "--semihosting" 
 
