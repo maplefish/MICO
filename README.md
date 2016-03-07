@@ -25,7 +25,7 @@ MICO
 WiFiMCU is developed based on EMW3165 module produced by [MXCHIP.INC](http://en.mxchip.com/). A Lua interpreter is builded inside with hardware support. A light weight file system and socket protocols can help to realize IoT development easily and quickly. Basically, you can load Lua scripts on your device and then run it on board with nothing more than a terminal connection. <br/>
 
 #Overview
-- Based on Lua 5.1.4 (package, string, table, math modules)<br/>
+- Based on Lua 5.1.4 (package, string, table, math and coroutine modules)<br/>
 - Build-in modules: mcu, gpio, timer, wifi, net, file, pwm, uart, adc, spi, i2c, 1-wire, bit, mqtt, rtc, oled, lcd, ...<br/>
 - Hardware & software SPI<br/>
 - Hardware & software I2C<br/>
